@@ -1,7 +1,20 @@
 {
   "title": "Cheple Store",
-  "format": 1,
+  "format": 2,
   "apps": [
+    {
+      "id": "marble",
+      "name": "Marble",
+      "icon": "Mb",
+      "color": "#F2994A",
+      "category": "Games",
+      "version": "1.0",
+      "author": "cheplestore",
+      "featured": true,
+      "desc": "Tip your phone to roll the marble into the stars. You get 45 seconds - beat your best! (needs cOS 4.6)",
+      "file": "apps/marble.lua",
+      "size": 3241
+    },
     {
       "id": "pong",
       "name": "Pong",
@@ -105,6 +118,121 @@
       "desc": "The simplest Cheple app: a button and a counter. Open its file to learn how apps are made.",
       "file": "apps/hello.lua",
       "size": 879
+    },
+    {
+      "id": "sensors",
+      "name": "Sensors",
+      "icon": "Sn",
+      "color": "#2D9CDB",
+      "category": "Tools",
+      "version": "1.0",
+      "author": "cheplestore",
+      "featured": false,
+      "desc": "Everything your Cheple can feel, live: tilt, gravity, steps, heart rate, how loud it is, battery and where you are. Tap Say it and Cheo reads it out. (needs cOS 4.6)",
+      "file": "apps/sensors.lua",
+      "size": 2084
+    }
+  ],
+  "wallpapers": [
+    {
+      "id": "aurora",
+      "name": "Aurora",
+      "file": "wallpapers/aurora.jpg",
+      "thumb": "wallpapers/thumbs/aurora.jpg",
+      "size": 12756
+    },
+    {
+      "id": "sunset",
+      "name": "Sunset",
+      "file": "wallpapers/sunset.jpg",
+      "thumb": "wallpapers/thumbs/sunset.jpg",
+      "size": 7398
+    },
+    {
+      "id": "ocean",
+      "name": "Ocean",
+      "file": "wallpapers/ocean.jpg",
+      "thumb": "wallpapers/thumbs/ocean.jpg",
+      "size": 20601
+    },
+    {
+      "id": "bokeh",
+      "name": "Bokeh",
+      "file": "wallpapers/bokeh.jpg",
+      "thumb": "wallpapers/thumbs/bokeh.jpg",
+      "size": 10013
+    },
+    {
+      "id": "triangles",
+      "name": "Triangles",
+      "file": "wallpapers/triangles.jpg",
+      "thumb": "wallpapers/thumbs/triangles.jpg",
+      "size": 7226
+    },
+    {
+      "id": "night",
+      "name": "Night Sky",
+      "file": "wallpapers/night.jpg",
+      "thumb": "wallpapers/thumbs/night.jpg",
+      "size": 13646
+    },
+    {
+      "id": "forest",
+      "name": "Forest",
+      "file": "wallpapers/forest.jpg",
+      "thumb": "wallpapers/thumbs/forest.jpg",
+      "size": 12140
+    },
+    {
+      "id": "cheese",
+      "name": "Cheese",
+      "file": "wallpapers/cheese.jpg",
+      "thumb": "wallpapers/thumbs/cheese.jpg",
+      "size": 9002
+    }
+  ],
+  "sounds": [
+    {
+      "id": "sunrise",
+      "name": "Sunrise",
+      "kind": "ringtone",
+      "file": "sounds/sunrise.wav",
+      "size": 114704
+    },
+    {
+      "id": "bells",
+      "name": "Bells",
+      "kind": "ringtone",
+      "file": "sounds/bells.wav",
+      "size": 185264
+    },
+    {
+      "id": "arcade",
+      "name": "Arcade",
+      "kind": "ringtone",
+      "file": "sounds/arcade.wav",
+      "size": 75014
+    },
+    {
+      "id": "pop",
+      "name": "Pop",
+      "kind": "alert",
+      "file": "sounds/pop.wav",
+      "size": 15478
+    },
+    {
+      "id": "sparkle",
+      "name": "Sparkle",
+      "kind": "alert",
+      "file": "sounds/sparkle.wav",
+      "size": 30912
+    },
+    {
+      "id": "knock",
+      "name": "Knock",
+      "kind": "alert",
+      "file": "sounds/knock.wav",
+      "size": 15478
     }
   ]
 }
