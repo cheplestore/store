@@ -1,0 +1,110 @@
+{
+  "title": "Cheple Store",
+  "format": 1,
+  "apps": [
+    {
+      "id": "pong",
+      "name": "Pong",
+      "icon": "Pg",
+      "color": "#EB5757",
+      "category": "Games",
+      "version": "1.0",
+      "author": "cheplestore",
+      "featured": true,
+      "desc": "Classic Pong against the phone. Slide your finger along the bottom to move your paddle. First to 7 wins!",
+      "file": "apps/pong.lua",
+      "size": 3492
+    },
+    {
+      "id": "simon",
+      "name": "Simon",
+      "icon": "Sm",
+      "color": "#27AE60",
+      "category": "Games",
+      "version": "1.0",
+      "author": "cheplestore",
+      "featured": true,
+      "desc": "Watch the colours light up, then tap them back in the same order. Every round adds one more - how long can you remember?",
+      "file": "apps/simon.lua",
+      "size": 3031
+    },
+    {
+      "id": "magic8",
+      "name": "Magic 8",
+      "icon": "8",
+      "color": "#3D3D9E",
+      "category": "Fun",
+      "version": "1.0",
+      "author": "cheplestore",
+      "featured": false,
+      "desc": "Ask a yes-or-no question, tap the ball, and the Magic 8 Ball gives you its answer.",
+      "file": "apps/magic8.lua",
+      "size": 2108
+    },
+    {
+      "id": "breakout",
+      "name": "Breakout",
+      "icon": "Bk",
+      "color": "#9B51E0",
+      "category": "Games",
+      "version": "1.0",
+      "author": "cheplestore",
+      "featured": false,
+      "desc": "Slide your finger to move the paddle and break all the bricks. 3 lives, saves your best score.",
+      "file": "apps/breakout.lua",
+      "size": 5005
+    },
+    {
+      "id": "paint",
+      "name": "Paint",
+      "icon": "Pt",
+      "color": "#EB5757",
+      "category": "Tools",
+      "version": "1.0",
+      "author": "cheplestore",
+      "featured": false,
+      "desc": "Finger painting with a choice of colours and brush sizes.",
+      "file": "apps/paint.lua",
+      "size": 2050
+    },
+    {
+      "id": "jokes",
+      "name": "Jokes",
+      "icon": ":)",
+      "color": "#F2994A",
+      "category": "Fun",
+      "version": "1.0",
+      "author": "cheplestore",
+      "featured": false,
+      "desc": "A random joke from the internet every time you tap. Needs Wi-Fi.",
+      "file": "apps/jokes.lua",
+      "size": 1490
+    },
+    {
+      "id": "tally",
+      "name": "Tally",
+      "icon": "+1",
+      "color": "#27AE60",
+      "category": "Tools",
+      "version": "1.0",
+      "author": "cheplestore",
+      "featured": false,
+      "desc": "A counter that remembers its number. Rename it for whatever you're counting.",
+      "file": "apps/tally.lua",
+      "size": 1224
+    },
+    {
+      "id": "hello",
+      "name": "Hello",
+      "icon": "Hi",
+      "color": "#2D9CDB",
+      "category": "Learn",
+      "version": "1.0",
+      "author": "cheplestore",
+      "featured": false,
+      "desc": "The simplest Cheple app: a button and a counter. Open its file to learn how apps are made.",
+      "file": "apps/hello.lua",
+      "size": 879
+    }
+  ]
+}
