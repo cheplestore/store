@@ -1,6 +1,6 @@
 {
-  "version": "4.8.0",
+  "version": "4.9.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "4.3 MB",
-  "notes": "Dynamic Island, notification stacks with Cheo summaries, and a memory manager (Settings > Memory)."
+  "notes": "App Library, Live Activities on the lock screen, app privacy permissions, and Data Protection for your notes."
 }
