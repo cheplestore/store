@@ -1,6 +1,6 @@
 {
-  "version": "5.0.0",
+  "version": "5.1.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
-  "size": "4.4 MB",
-  "notes": "cOS 5: Shortcuts & Automations, Continuity clipboard, QR sharing, Backup & Restore, Link Tracking Protection, and fixes."
+  "size": "4.5 MB",
+  "notes": "cOS 5.1: Optimized Charging (80%), Larger & Bold Text, Always On lock screen while charging, Find My Cheple, US severe weather alerts, interactive Music/Timer/Shortcuts widgets."
 }
