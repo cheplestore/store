@@ -1,6 +1,6 @@
 {
-  "version": "4.9.0",
+  "version": "5.0.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
-  "size": "4.3 MB",
-  "notes": "App Library, Live Activities on the lock screen, app privacy permissions, and Data Protection for your notes."
+  "size": "4.4 MB",
+  "notes": "cOS 5: Shortcuts & Automations, Continuity clipboard, QR sharing, Backup & Restore, Link Tracking Protection, and fixes."
 }
