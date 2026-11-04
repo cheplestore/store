@@ -1,6 +1,6 @@
 {
-  "version": "5.2.0",
+  "version": "5.1.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "4.5 MB",
-  "notes": "cOS 5.2: Quick actions (hold an app), Music sleep timer, Notes checklists/pins/search, Shake to Undo, App Store auto-updates, and fixes."
+  "notes": "cOS 5.1: Optimized Charging (80%), Larger & Bold Text, Always On lock screen while charging, Find My Cheple, US severe weather alerts, interactive Music/Timer/Shortcuts widgets."
 }
