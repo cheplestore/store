@@ -1,6 +1,6 @@
 {
-  "version": "7.0.0",
+  "version": "7.0.1",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "4.6 MB",
-  "notes": "cOS 7: Contacts, Wallet, Translate and Magnifier apps, hourly weather + rain alerts, Gentle and Smart Wake, Voice Memo transcripts, Calendar Upcoming, Text Replacement, App Limits, Downtime, Locked Apps, Scheduled Summary, Auto Low Power, Nightly Backup."
+  "notes": "cOS 7.0.1: bug fixes - Light Mode no longer inverts Wallet passes and the Magnifier, Auto Low Power stays off when you turn it off, Smart Wake after midnight, passcode guess limit, Contacts with the same name, Magnifier without a camera, Calendar Upcoming overflow."
 }
