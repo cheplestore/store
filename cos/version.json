@@ -1,6 +1,6 @@
 {
-  "version": "5.1.0",
+  "version": "5.3.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "4.5 MB",
-  "notes": "cOS 5.1: Optimized Charging (80%), Larger & Bold Text, Always On lock screen while charging, Find My Cheple, US severe weather alerts, interactive Music/Timer/Shortcuts widgets."
+  "notes": "cOS 5.3: about 42 KB more fast RAM free (steadier Wi-Fi), and a Battery Health page with charge cycles and battery use by app."
 }
