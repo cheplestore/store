@@ -1,6 +1,6 @@
 {
-  "version": "6.1.0",
+  "version": "7.0.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "4.6 MB",
-  "notes": "cOS 6.1: bug fixes - alarms ring even with a Settings page open, no more skipped alarms, Weather app freezing, Focus and Bedtime fixes, lock screen Emergency button, Photos albums."
+  "notes": "cOS 7: Contacts, Wallet, Translate and Magnifier apps, hourly weather + rain alerts, Gentle and Smart Wake, Voice Memo transcripts, Calendar Upcoming, Text Replacement, App Limits, Downtime, Locked Apps, Scheduled Summary, Auto Low Power, Nightly Backup."
 }
