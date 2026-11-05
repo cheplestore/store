@@ -1,6 +1,6 @@
 {
-  "version": "5.3.0",
+  "version": "6.0.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "4.5 MB",
-  "notes": "cOS 5.3: about 42 KB more fast RAM free (steadier Wi-Fi), and a Battery Health page with charge cycles and battery use by app."
+  "notes": "cOS 6: Focus modes, Music Equalizer, Smart Stack widget, Photos favorites/albums/slideshow/memories, Emergency SOS + Medical ID, sleep tracking, World Clock + Bedtime, faster startup."
 }
