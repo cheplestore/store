@@ -1,6 +1,6 @@
 {
-  "version": "6.0.0",
+  "version": "6.1.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
-  "size": "4.5 MB",
-  "notes": "cOS 6: Focus modes, Music Equalizer, Smart Stack widget, Photos favorites/albums/slideshow/memories, Emergency SOS + Medical ID, sleep tracking, World Clock + Bedtime, faster startup."
+  "size": "4.6 MB",
+  "notes": "cOS 6.1: bug fixes - alarms ring even with a Settings page open, no more skipped alarms, Weather app freezing, Focus and Bedtime fixes, lock screen Emergency button, Photos albums."
 }
