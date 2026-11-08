@@ -21,7 +21,7 @@ try:
 except ImportError:
     sys.exit("Needs the cryptography package:  pip3 install cryptography")
 
-VERSION = "1.0.0"
+VERSION = "1.1.0"
 CONF = os.path.expanduser("~/.cheple/privatecloud.json")
 PAIR_ITER = 50000          # PBKDF2 rounds for the pairing code (slow on purpose)
 PAIR_WINDOW = 10 * 60      # --pair works for 10 minutes
@@ -73,6 +73,7 @@ def lan_ip():
 class State:
     key = None
     model = "llama3.2:3b"
+    lite = ""                 # 1.1: smaller model for when the phone is hot or low on battery
     ollama = "http://localhost:11434"
     debug = False
     pair_code = None
@@ -91,8 +92,8 @@ def ollama_ok():
         return False
 
 
-def ask_ollama(messages, max_tokens, temperature):
-    body = json.dumps({"model": State.model, "messages": messages, "stream": False,
+def ask_ollama(messages, max_tokens, temperature, model):
+    body = json.dumps({"model": model, "messages": messages, "stream": False,
                        "options": {"num_predict": int(max_tokens), "temperature": float(temperature)}}).encode()
     req = urllib.request.Request(State.ollama + "/api/chat", data=body, headers={"Content-Type": "application/json"})
     with urllib.request.urlopen(req, timeout=120) as r:
@@ -116,7 +117,7 @@ class Handler(BaseHTTPRequestHandler):
 
     def do_GET(self):
         if self.path == "/status":
-            return self.reply(200, json.dumps({"cheple": 1, "version": VERSION, "model": State.model,
+            return self.reply(200, json.dumps({"cheple": 1, "version": VERSION, "model": State.model, "lite": State.lite,
                                                "sha256": SELF_SHA, "ollama": ollama_ok()}))
         if self.path == "/pair":
             with State.lock:
@@ -159,13 +160,14 @@ class Handler(BaseHTTPRequestHandler):
                 for m in q.get("messages", [])][:12]
         try:
             t0 = time.time()
-            a = ask_ollama(msgs, min(int(q.get("max_tokens", 220)), 800), q.get("temperature", 0.6))
+            model = State.lite if (q.get("lite") and State.lite) else State.model
+            a = ask_ollama(msgs, min(int(q.get("max_tokens", 220)), 800), q.get("temperature", 0.6), model)
             if State.debug:
                 print(f"[debug] answered in {time.time() - t0:.1f} s")
         except Exception as e:
             print("Ollama didn't answer:", type(e).__name__, "- is it running?  (ollama serve)")
             return self.reply(502, '{"error":"ollama"}')
-        out = json.dumps({"id": rid, "t": int(time.time()), "model": State.model, "content": a}).encode()
+        out = json.dumps({"id": rid, "t": int(time.time()), "model": model, "content": a}).encode()
         self.reply(200, seal(State.key, b"cheple-reply-v1", out), "text/plain")
 
 
@@ -174,6 +176,7 @@ def main():
     ap.add_argument("--pair", action="store_true", help="show a pairing code (works for 10 minutes)")
     ap.add_argument("--port", type=int, default=8787)
     ap.add_argument("--model", default="llama3.2:3b", help="any model you've pulled with ollama")
+    ap.add_argument("--lite-model", default="", help="smaller model used when the phone is hot or low on battery, e.g. llama3.2:1b")
     ap.add_argument("--ollama", default="http://localhost:11434")
     ap.add_argument("--new-key", action="store_true", help="forget every paired phone (makes a new key)")
     ap.add_argument("--debug", action="store_true", help="print timings (never the questions)")
@@ -181,10 +184,11 @@ def main():
     if a.new_key and os.path.exists(CONF):
         os.remove(CONF)
     State.key = load_key()
-    State.model, State.ollama, State.debug = a.model, a.ollama.rstrip("/"), a.debug
+    State.model, State.lite, State.ollama, State.debug = a.model, a.lite_model, a.ollama.rstrip("/"), a.debug
     print(f"Cheple Private Cloud {VERSION}  (code SHA-256 {SELF_SHA[:16]}...)")
     print(f"  On the phone: Settings > Private AI > At Home:  {lan_ip()}")
-    print(f"  AI model: {State.model}" + ("" if ollama_ok() else "   ** Ollama isn't running - start the Ollama app **"))
+    print(f"  AI model: {State.model}" + (f"  (low battery: {State.lite})" if State.lite else "") +
+          ("" if ollama_ok() else "   ** Ollama isn't running - start the Ollama app **"))
     if a.pair:
         State.pair_code = "".join(secrets.choice(CODE_CHARS) for _ in range(8))
         State.pair_until = time.time() + PAIR_WINDOW

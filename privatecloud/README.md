@@ -20,7 +20,9 @@ Cheple phone  --(sealed with your key)-->  your Mac  -->  Ollama (AI on your Mac
 1. **Install Ollama** from https://ollama.com (the Mac app), then in Terminal:
    ```
    ollama pull llama3.2:3b
+   ollama pull llama3.2:1b
    ```
+   (the small 1b one answers when the phone is hot or under 20% battery)
    Any model works (for example `qwen2.5:7b` if your Mac has 16 GB of memory). Start the server
    with `--model qwen2.5:7b` to use it.
 2. **Download this folder** (`cheple_private_cloud.py` plus the two `.command` files).
@@ -51,6 +53,7 @@ key, the tunnel company can't read them.
 |---|---|
 | `--pair` | show a pairing code (10 minutes, 10 tries) |
 | `--model NAME` | which Ollama model to use (default `llama3.2:3b`) |
+| `--lite-model NAME` | a smaller one for when the phone is hot or under 20% (for example `llama3.2:1b`, after `ollama pull llama3.2:1b`) |
 | `--port N` | default 8787 |
 | `--new-key` | forget every paired phone |
 | `--debug` | print timings (never the questions) |

@@ -1,6 +1,6 @@
 {
-  "version": "7.1.0",
+  "version": "7.2.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
-  "size": "4.6 MB",
-  "notes": "cOS 7.1: Private Cloud (Cheo asks your own Mac, end-to-end encrypted), Private Cheo (hides names and numbers from Groq), Cheo searches your phone, camera Night Mode and Smart Shutter, camera and mic dots."
+  "size": "4.7 MB",
+  "notes": "cOS 7.2: Screen Diffing, Smart Speed, compressed app switcher (12 apps), Photos edits that keep the original + instant copies, tighter app sandbox and stack protection, Adaptive Power."
 }
