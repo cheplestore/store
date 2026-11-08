@@ -1,6 +1,6 @@
 {
-  "version": "7.2.0",
+  "version": "8.1.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
-  "size": "4.7 MB",
-  "notes": "cOS 7.2: Screen Diffing, Smart Speed, compressed app switcher (12 apps), Photos edits that keep the original + instant copies, tighter app sandbox and stack protection, Adaptive Power."
+  "size": "4.9 MB",
+  "notes": "cOS 8.1: Podcasts and Noise apps, Offline Maps, Slide to Type, Live Captions, Sound Recognition, hearing warnings, Voice Control numbers, Speak Screen, Live Sky wallpaper, Photo Shuffle, Control Center editing, and bug fixes."
 }
