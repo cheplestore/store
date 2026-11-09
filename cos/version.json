@@ -1,6 +1,6 @@
 {
-  "version": "8.1.0",
+  "version": "8.2.1",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "4.9 MB",
-  "notes": "cOS 8.1: Podcasts and Noise apps, Offline Maps, Slide to Type, Live Captions, Sound Recognition, hearing warnings, Voice Control numbers, Speak Screen, Live Sky wallpaper, Photo Shuffle, Control Center editing, and bug fixes."
+  "notes": "cOS 8.2.1: turning the phone off puts the 4G board to sleep, so both can share one battery."
 }
