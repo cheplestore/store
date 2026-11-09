@@ -1,6 +1,6 @@
 {
-  "version": "8.2.1",
+  "version": "8.3.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "4.9 MB",
-  "notes": "cOS 8.2.1: turning the phone off puts the 4G board to sleep, so both can share one battery."
+  "notes": "cOS 8.3: new app icons - Cheple's own Cheese family look."
 }
