@@ -1,6 +1,6 @@
 {
-  "version": "8.5.0",
+  "version": "8.6.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "5.0 MB",
-  "notes": "cOS 8.5: Backup to your Mac, Nearby Cheples (send photos, Tic-Tac-Toe), Scan a Page in Notes, StandBy at night, GPS Shortcuts, new widgets, Stickers."
+  "notes": "cOS 8.6: Texts on your Mac, Universal Clipboard, scan QR codes into Wallet, directions and Check In as Live Activities, Translate with the camera, music for Memories, crash reports."
 }
