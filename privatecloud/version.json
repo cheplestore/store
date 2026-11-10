@@ -1,5 +1,8 @@
 {
-  "version": "1.1.0",
-  "sha256": ["d72b47dabe2f70a084c90cccbb7f2c9d1b4a2e83645d239ac877bd88c18835fc"],
+  "version": "1.2.0",
+  "sha256": [
+    "b15e28716764d95d955e61547788b5b25b698b8790ddc0d0f4b5c13d121a6fae",
+    "d72b47dabe2f70a084c90cccbb7f2c9d1b4a2e83645d239ac877bd88c18835fc"
+  ],
   "file": "https://raw.githubusercontent.com/cheplestore/store/main/privatecloud/cheple_private_cloud.py"
 }

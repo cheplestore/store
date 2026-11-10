@@ -1,6 +1,6 @@
 {
-  "version": "8.3.1",
+  "version": "8.5.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
-  "size": "4.9 MB",
-  "notes": "cOS 8.3.1: fixes search and other online things stopping after a few apps were opened (more room in the fast RAM)."
+  "size": "5.0 MB",
+  "notes": "cOS 8.5: Backup to your Mac, Nearby Cheples (send photos, Tic-Tac-Toe), Scan a Page in Notes, StandBy at night, GPS Shortcuts, new widgets, Stickers."
 }
