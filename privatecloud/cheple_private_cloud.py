@@ -30,12 +30,12 @@ try:
 except ImportError:
     sys.exit("Needs the cryptography package:  pip3 install cryptography")
 
-VERSION = "1.3.0"
+VERSION = "1.3.1"
 CONF = os.path.expanduser("~/.cheple/privatecloud.json")
 PAIR_ITER = 50000          # PBKDF2 rounds for the pairing code (slow on purpose)
 PAIR_WINDOW = 10 * 60      # --pair works for 10 minutes
 MAX_BODY = 64 * 1024
-BK_BODY = 96 * 1024                                  # 1.2: a backup chunk (24 KB of file) + sealing
+BK_BODY = 2 * 1024 * 1024                            # 1.2: a backup chunk (24 KB of file) + sealing; 1.3.1: or the whole file list
 BK_DIR = os.path.expanduser("~/.cheple/backup")
 BK_MAX_FILE = 9 * 1024 * 1024
 CODE_CHARS = "ABCDEFGHJKLMNPQRSTUVWXYZ23456789"   # no 0/O/1/I mix-ups

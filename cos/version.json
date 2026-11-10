@@ -1,6 +1,6 @@
 {
-  "version": "8.6.0",
+  "version": "8.6.1",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "5.0 MB",
-  "notes": "cOS 8.6: Texts on your Mac, Universal Clipboard, scan QR codes into Wallet, directions and Check In as Live Activities, Translate with the camera, music for Memories, crash reports."
+  "notes": "cOS 8.6.1: bug fixes - Backup to Mac with big Maps/Music folders, sticker ovals, Mobile Data limit text, Passwords and Shortcuts layout, Tic-Tac-Toe names."
 }
