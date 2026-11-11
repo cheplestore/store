@@ -1,6 +1,6 @@
 {
-  "version": "8.7.1",
+  "version": "8.7.2",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "5.0 MB",
-  "notes": "cOS 8.7.1: Sky Ace gets real-looking jets; fixed Sky Ace closing when you touch the controls; fixed flicker in Sky Ace and Flappy Bird."
+  "notes": "cOS 8.7.2: Sky Ace gets landing gear and a FIRE button, enemy shots you can dodge, and less screen glitching."
 }
