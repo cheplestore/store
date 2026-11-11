@@ -1,6 +1,6 @@
 {
-  "version": "8.6.2",
+  "version": "8.7.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "5.0 MB",
-  "notes": "cOS 8.6.2: a new look for Cheo - a glowing orb that breathes with your voice."
+  "notes": "cOS 8.7: Sky Ace - a 3D flight game. Take off, fly to the next airport and land while enemy fighters attack."
 }
