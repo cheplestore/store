@@ -1,6 +1,6 @@
 {
-  "version": "8.7.2",
+  "version": "8.8.0",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "5.0 MB",
-  "notes": "cOS 8.7.2: Sky Ace gets landing gear and a FIRE button, enemy shots you can dodge, and less screen glitching."
+  "notes": "cOS 8.8: the cOS Kernel - frozen apps can't lock up the phone, crashes are blamed on the right app, apps that keep failing get paused, memory guard, and an Activity page in Settings."
 }
