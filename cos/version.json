@@ -1,6 +1,6 @@
 {
-  "version": "8.7.0",
+  "version": "8.7.1",
   "bin": "https://raw.githubusercontent.com/cheplestore/store/main/cos/cheple_cos.bin",
   "size": "5.0 MB",
-  "notes": "cOS 8.7: Sky Ace - a 3D flight game. Take off, fly to the next airport and land while enemy fighters attack."
+  "notes": "cOS 8.7.1: Sky Ace gets real-looking jets; fixed Sky Ace closing when you touch the controls; fixed flicker in Sky Ace and Flappy Bird."
 }
